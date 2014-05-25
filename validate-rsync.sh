@@ -13,6 +13,7 @@ case "$SSH_ORIGINAL_COMMAND" in
 	;;
 	*\;*)
 	echo Rejected
+	;;
 	*\<*)
 	echo Rejected
 	;;
