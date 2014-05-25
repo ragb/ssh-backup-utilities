@@ -1,3 +1,3 @@
 #!/bin/sh
 
-rsync -avz -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i $1" $2 $3
+rsync --delete -avv -e "ssh -i $1 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" $2 $3
